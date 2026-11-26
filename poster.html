@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1024px; height:1024px; font-family: Arial, Helvetica, sans-serif; background:#f4f1ea; color:#14213d; overflow:hidden; }
+  .page { width:1024px; height:1024px; padding:26px 28px 20px; display:flex; flex-direction:column; }
+  header { background:#0f2440; color:#fff; border-radius:14px; padding:22px 26px 20px; }
+  .kicker { font-size:15px; letter-spacing:3px; font-weight:700; color:#f2b705; }
+  h1 { font-size:58px; line-height:1.02; letter-spacing:1px; margin:6px 0 8px; }
+  .sub { font-size:19px; line-height:1.35; color:#dbe4f0; }
+  .sub b { color:#fff; }
+  .lead { margin-top:16px; background:#fff; border-left:10px solid #c1121f; border-radius:12px; padding:16px 20px 14px; display:flex; gap:18px; box-shadow:0 2px 8px rgba(15,36,64,.12); }
+  .lead .num { font-size:52px; font-weight:900; color:#c1121f; line-height:1; }
+  .lead .num small { display:block; font-size:13px; letter-spacing:2px; color:#c1121f; margin-top:4px; }
+  .tag { font-size:13px; font-weight:800; letter-spacing:2px; color:#c1121f; }
+  .lead h2 { font-size:29px; line-height:1.15; margin:3px 0 6px; }
+  .lead p { font-size:17px; line-height:1.4; color:#333; }
+  .grid { margin-top:14px; display:grid; grid-template-columns:1fr 1fr; gap:14px; flex:1; }
+  .card { background:#fff; border-radius:12px; padding:15px 17px 13px; box-shadow:0 2px 8px rgba(15,36,64,.10); border-top:6px solid #0f2440; display:flex; flex-direction:column; }
+  .card.red { border-top-color:#c1121f; }
+  .card.gold { border-top-color:#e8a100; }
+  .card.teal { border-top-color:#0e7c7b; }
+  .card .top { display:flex; justify-content:space-between; align-items:baseline; }
+  .card .tag { color:#0f2440; }
+  .card.red .tag { color:#c1121f; }
+  .card .stat { font-size:30px; font-weight:900; color:#0f2440; line-height:1; }
+  .card .stat span { font-size:13px; font-weight:700; letter-spacing:1px; }
+  .card h3 { font-size:23px; line-height:1.18; margin:7px 0 6px; }
+  .card p { font-size:15.5px; line-height:1.38; color:#333; }
+  footer { margin-top:14px; display:flex; justify-content:space-between; align-items:center; font-size:13px; color:#5a6577; border-top:2px solid #d8d2c4; padding-top:10px; }
+  footer b { color:#0f2440; }
+</style></head>
+<body><div class="page">
+  <header>
+    <div class="kicker">THE WORLD IN ONE IMAGE &nbsp;•&nbsp; THURSDAY, 26 NOVEMBER 2026</div>
+    <h1>WORLD NEWS</h1>
+    <div class="sub">Seven stories that defined the day — <b>trade, conflict, disaster</b> and a Thanksgiving first in 100 years.</div>
+  </header>
+
+  <section class="lead">
+    <div class="num">14<small>PARTNERS</small></div>
+    <div>
+      <div class="tag">TRADE &nbsp;•&nbsp; WASHINGTON</div>
+      <h2>US proposes new tariffs on 14 trading partners</h2>
+      <p>Washington proposed duties of 18–20% on several Asian exporters, citing excess industrial capacity. China, the EU and Japan are among the 14 named. Beijing called it political manipulation; the EU and Japan rejected the case.</p>
+    </div>
+  </section>
+
+  <div class="grid">
+    <section class="card red">
+      <div class="top"><div class="tag">MIDDLE EAST • KUWAIT</div><div class="stat">2 <span>KILLED</span></div></div>
+      <h3>Drone attack in Kuwait kills two Italians</h3>
+      <p>Two Rheinmetall Italia technicians died at an air-defence site; four others were hurt. Kuwait blamed Iran. Tehran denied any role.</p>
+    </section>
+    <section class="card red">
+      <div class="top"><div class="tag">DISASTER • CAIRO</div><div class="stat">31 <span>KILLED</span></div></div>
+      <h3>Cairo tanker fire kills 31</h3>
+      <p>A fuel tanker overturned on Cairo&rsquo;s Ring Road and burst into flames. 21 people were injured. The driver was detained after police said he was speeding.</p>
+    </section>
+    <section class="card">
+      <div class="top"><div class="tag">EUROPE • FRANKFURT</div><div class="stat">DEC <span>DECISION</span></div></div>
+      <h3>New chief picked to lead the ECB</h3>
+      <p>Spain&rsquo;s Pablo Hern&aacute;ndez de Cos, now head of the Bank for International Settlements, will succeed Christine Lagarde. Formal appointment is expected in December.</p>
+    </section>
+    <section class="card gold">
+      <div class="top"><div class="tag">ASIA • PYONGYANG</div><div class="stat">NUCLEAR</div></div>
+      <h3>Kim vows a bigger nuclear arsenal</h3>
+      <p>Kim Jong Un visited nuclear facilities and called for wider use of tactical nuclear weapons, saying North Korea&rsquo;s nuclear status &ldquo;will never change&rdquo;.</p>
+    </section>
+    <section class="card teal">
+      <div class="top"><div class="tag">DISASTER • BANGKOK</div><div class="stat">9 <span>INJURED</span></div></div>
+      <h3>Blast at Bangkok oil facility injures nine</h3>
+      <p>An explosion at a Bangchak refinery sent smoke over the city. Three people were critically hurt and nearby residents were urged to leave.</p>
+    </section>
+    <section class="card">
+      <div class="top"><div class="tag">USA • NEW YORK</div><div class="stat">100 <span>YEARS</span></div></div>
+      <h3>Macy&rsquo;s parade postponed — a first in 100 years</h3>
+      <p>A storm forced the Thanksgiving Day Parade to Saturday, 28 Nov. About 300,000 lost power and hundreds of flights were cancelled.</p>
+    </section>
+  </div>
+
+  <footer><span><b>Sources:</b> Reuters &bull; BBC &bull; Al Jazeera &bull; CNBC &bull; The Guardian &bull; NPR</span><span><b>26 NOV 2026</b> &nbsp;•&nbsp; All time zones</span></footer>
+</div></body></html>
